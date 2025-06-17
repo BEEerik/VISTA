@@ -9,43 +9,6 @@ Toon vervolgens de lijst in alfabetische volgorde op het scherm.
 
 Dit script vraagt de gebruiker om items voor een verlanglijst in te voeren en toont deze lijst vervolgens in alfabetische volgorde. Het script biedt ook de mogelijkheid om de lijst opnieuw in te voeren.
 
-```python
-verlanglijst = []
-
-while True:
-    item = input("Wat zou je graag van Sinterklaas willen hebben? (typ 'KLAAR!' om te stoppen): ")
-    if item.upper() == "KLAAR!":
-        break
-    verlanglijst.append(item)
-
-verlanglijst.sort()
-
-print("Je verlanglijst in alfabetische volgorde:")
-for item in verlanglijst:
-    print(item)
-
-while True:
-    again = input("Nog een keer proberen? (ja/nee of j/n) ").lower()
-    if again in ['nee', 'n']:
-        print("Tot ziens!")
-        break
-    elif again in ['ja', 'j']:
-        verlanglijst = []
-        while True:
-            item = input("Wat zou je graag van Sinterklaas willen hebben? (typ 'KLAAR!' om te stoppen): ")
-            if item.upper() == "KLAAR!":
-                break
-            verlanglijst.append(item)
-
-        verlanglijst.sort()
-
-        print("Je verlanglijst in alfabetische volgorde:")
-        for item in verlanglijst:
-            print(item)
-    else:
-        print("Ongeldige invoer, probeer het opnieuw.")
-```
-
 **Uitleg:**
 
 1. `verlanglijst = []`: Initialiseert een lege lijst om de verlanglijstitems op te slaan.
