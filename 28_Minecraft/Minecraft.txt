@@ -1,0 +1,21 @@
+28 Minecraft JSON
+De blokken in Minecraft kunnen we beschrijven met een JSON object.
+Dit object bevat dan de specifieke eigenschappen van het blok. 
+In deze opdracht gaan we deze eigenschappen aanpassen.
+Als eerste willen we een grasblok in een sneeuwblok laten veranderen. 
+Hiervoor moet je 'snow' op 'True' zetten.
+Vervolgens willen we de locatie van het blok aanpassen:
+we verschuiven het blok +66 in de y-richting en we maken het z-coördinaat drie keer zo groot. 
+Lees gras_blok.json in met Python. 
+Pas de eigenschappen aan zoals hierboven genoemd. 
+Sla deze aangepaste dictionary op als JSON bestand noem deze sneeuw_blok.json. 
+Deze lever je naast je code ook in.
+...
+
+Lees het JSON-bestand gras_blok.json in.
+Pas de eigenschappen aan zoals beschreven:
+Zet de eigenschap snow op True.
+Verhoog de y-coördinaat met 66.
+Vermenigvuldig de z-coördinaat met 3.
+Sla de aangepaste dictionary op als een nieuw JSON-bestand genaamd sneeuw_blok.json.
+...
